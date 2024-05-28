@@ -121,7 +121,7 @@ section.animal .flex{
     transform: scale(1.02);
     color: white;
     border:2px solid white;
-    background-image: linear-gradient(var(--azul-logo-degrade), var(--azul-logo));
+    background-color: var(--azul-logo);
 }
 
 
@@ -129,6 +129,7 @@ section.animal .flex{
     width: 500px;
     position: relative;
     animation: nadando 1.5s ease-in-out infinite alternate;
+    transition: 0.3s ease-in-out;
 }
 
 @keyframes nadando {
