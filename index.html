@@ -3,14 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- inicio google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- fim google fonts -->
+
+    <!-- inicio css -->
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- fim css -->
+
     <title>Blue Future</title>
 </head>
 <body>
-    <div class="inicio">
+
+    
+    <div class="inicio bg-image"> <!-- inicio -->
         <header>
-            <img src="./src/assets/logo.png">
+            <img src="./src/assets/logo.png" alt="Blue Future" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Problema</a></li>
+                    <li><a href="">Tecnologia</a></li>
+                    <li><a href="">Objetivos</a></li>
+                    <li><a href="">Público</a></li>
+                    <li><a href="">Beneficios</a></li>
+                    <li><a href="">Mudanças</a></li>
+                </ul>
+            </nav>
         </header>
-    </div>
+
+        <section class="animal">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-animal"> <!-- txt animal -->
+                        <h1>Bem vindo ao <span>Blue</span> Future!</h1>
+                        <p>
+                            Nosso oceano é vital para o planeta, mas enfrenta ameaças graves devido à poluição. Para combater isso, utilizamos tecnologia sustentável, como sistemas de coleta de resíduos automatizados e drones subaquáticos que monitoram a qualidade da água. Desenvolvemos também materiais biodegradáveis para substituir plásticos e promovemos a economia circular com reciclagem e uso responsável de recursos. Com inovação e compromisso global, podemos proteger e revitalizar nossos mares para um futuro mais saudável. Junte-se a nós nesta missão.
+                        </p>
+                    
+
+                        <div class="btn-animal"> <!-- btn animal -->
+                            <button>Junte-se a nós</button>
+                        </div> <!-- fim btn animal -->
+                    </div> <!-- fim txt animal -->
+                    <div class="img-animal"> <!-- img animal -->
+                        <img src="./src/assets/tartaruga.png">
+                    </div> <!-- fim img animal -->
+
+                </div> <!-- fim flex -->
+            </div> <!-- fim interface -->
+
+        </section> <!-- fim sec animal -->
+    </div> <!-- fim inicio -->
+    
+
+    <!--inicio js -->
+    <script src="./src/js/script.js"></script>
+    <!-- fim js -->
 </body>
 </html>

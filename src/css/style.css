@@ -2,8 +2,144 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
-body{
-    background-color: #ab4c4c
+:root{
+    --azul-logo: #3AC6DA;
+    --azul-logo-degrade: #3abada;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.bg-image{
+    background-image: url('../assets/ocean.png');
+}
+
+header{
+    display: flex;
+}
+
+#logo{
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 200px;
+    height: 55px;
+    transition: 0.3s;
+}
+
+#logo:hover{
+    transform: scale(1.03);
+}
+
+nav{
+    margin-left: 15%;
+}
+
+nav li a{
+    color: white;   
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: aqua;
+}
+
+nav li{
+    transition: 0.3s;
+}
+
+nav li:hover{
+    color: aqua;
+    transform: scale(1.03);
+}
+
+nav ul{
+    margin-top: 30px;
+    gap: 20px;
+    display: flex;
+    list-style-type: none;
+    margin-left: 80%;
+}
+
+section.animal{
+    margin-top: 200px;
+    padding: 40px 4%;
+}
+
+section.animal .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.animal h1{
+    color: white;
+    font-size: 42px;
+    line-height: 37px;
+}
+
+.animal h1 span{
+    font-size: 45px;
+    background-image: linear-gradient(var(--azul-logo-degrade), var(--azul-logo));
+    -webkit-text-fill-color: transparent; /* Deixa a cor do texto transparente */
+    background-clip: text; /* Coloca a cor do fundo como a cor do texto */
+}
+
+.animal .txt-animal p {
+    color: white;
+    margin: 40px 0;
+}
+
+.animal button{
+    padding: 20px 50px;
+    font-size: 15px;
+    color: var(--azul-logo);
+    background-color: white;
+    border: 2px solid var(--azul-logo);
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.animal button:hover{
+    transform: scale(1.02);
+    color: white;
+    border:2px solid white;
+    background-image: linear-gradient(var(--azul-logo-degrade), var(--azul-logo));
+}
+
+
+.animal img{
+    width: 500px;
+    position: relative;
+    animation: nadando 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes nadando {
+    0%{
+        right: 20px;
+        top: 0;
+        left: 0;
+    }
+    100%{
+        right: 0;
+        left: 10px;
+        top: 10px;
+    }
 }
