@@ -7,7 +7,7 @@
 
 :root{
     --azul-logo: #3AC6DA;
-    --azul-logo-degrade: #3abada;
+    --azul-logo-degrade: #3aafda;
     --azul-escuro: #0F1550 ;
 }
 
@@ -147,5 +147,42 @@ section.animal .flex{
 /* Problema */
 
 section.problema{
-    margin-top: 50px;
+    margin: 20px;
+    
+}
+
+.titulo-problema{
+    text-align: center;
+}
+
+.problema h2{
+    font-size: 35px;
+}
+
+.problema h2 span{
+    background-image: linear-gradient(var(--azul-logo-degrade), var(--azul-logo));
+    -webkit-text-fill-color: transparent; /* Deixa a cor do texto transparente */
+    background-clip: text; /* Coloca a cor do fundo como a cor do texto */
+}
+
+.problema .flex{
+    margin: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-problema img{
+    margin-left: -30px;
+    border-radius: 20px;
+    width: 700px;
+}
+
+.problema .txt-problema{
+    margin-top: 130px;
+    font-size: 16px;
+}
+
+.problema i{
+    color: var(--azul-logo);
+    font-size: 60px;
 }

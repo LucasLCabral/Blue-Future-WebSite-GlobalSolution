@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="./src/assets/shorcut-icon.png">
+
     <!-- inicio google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!-- fim google fonts -->
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOORSTRAP -->
 
     <!-- inicio css -->
     <link rel="stylesheet" href="src/css/style.css">
@@ -20,7 +25,7 @@
 
     
     <div class="inicio bg-image"> <!-- inicio -->
-        <header>
+        <header class="menu">
             <img src="./src/assets/logo.png" alt="Blue Future" id="logo">
             <nav>
                 <ul>
@@ -56,14 +61,26 @@
             </div> <!-- fim interface -->
         </section> <!-- fim sec animal -->
     </div> <!-- fim inicio -->
+
     <section class="problema">
-        <div class="interface">
+        <div class="interface"> 
+            <div class="titulo-problema">
+                <h2><span>Nosso</span> Problema</h2>
+            </div> <!-- fim titulo problema -->
             <div class="flex">
-                <h1>Nosso Problema</h1>
-            </div>
-        </div>
+                <div class="img-problema">
+                    <img src="./src/assets/oceano-sujo.jpg">
+                </div> <!-- img problema -->
+                
+                <div class="txt-problema">
+                    <p>A Blue Future está na linha de frente contra a poluição dos oceanos, um problema grave que ameaça a saúde do nosso planeta. Nossos mares estão repletos de resíduos plásticos e outros poluentes que afetam a vida marinha e a qualidade da água. Para combater isso, utilizamos tecnologias de ponta, como sistemas automatizados de coleta de lixo marinho e drones subaquáticos que monitoram continuamente a poluição. Nossa missão é clara: proteger e revitalizar os oceanos através da inovação e do compromisso global.</p>
+                </div> <!-- txt problema -->
+            </div> <!-- flex-->
+        </div><!-- fim interface -->
+        <i class="bi bi-arrow-down-circle"></i>
     </section>
 
+    <section></section>
     <!--inicio js -->
     <script src="./src/js/script.js"></script>
     <!-- fim js -->
