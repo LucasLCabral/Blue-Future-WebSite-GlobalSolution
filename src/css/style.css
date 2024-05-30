@@ -120,6 +120,7 @@ section.animal .flex{
     border-radius: 20px;
     font-weight: 600;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .animal button:hover{
@@ -227,13 +228,67 @@ section.problema{
     width: 700px;
 }
 
-section.publico{
+.publico{
     margin-top: 100px;
 }
 
+.publico .flex{
+    margin-top: 20px;
+    gap: 20px;
+}
+
 .publico .txt-publico{
+    margin-top: 110px;
+}
+
+.img-publico img{
+    width: 700px;
+    border-radius: 20px;
+}
+
+section.beneficios{
+    margin-top: 100px;
+}
+
+.beneficios .flex{
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.img-beneficio img{
+    width: 700px;
+    border-radius: 20px;
+}
+
+.beneficios .txt-beneficio{
+    margin-top: 110px;
+}
+
+section.mudancas{
+    margin-top: 100px;
+}
+
+.mudancas .flex{
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.img-mudancas img{
+    width: 700px;
+    border-radius: 20px;
+}
+
+.mudancas .txt-mudancas{
+    margin-top: 110px;
+}
+
+/* Donate */
+section.donate{
+    margin-top: 100px;
+}
+
+.donate .txt-donate{
     margin-top: 130px;
-    margin-right: -100px;
 }
 
 .btn-donate{
@@ -268,7 +323,7 @@ section.publico{
     transform: scale(1.03);
 }
 
-.img-publico img{
+.img-donate img{
     position: relative;
     border-radius: 20px;
     width: 700px;
@@ -282,4 +337,50 @@ section.publico{
     100%{
         top: 10px;
     }
+}
+
+.div-final{
+    background-image: url(../assets/div.png);
+    width: 100%;
+    height: 50vh;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+footer img{
+    margin-top: 200px;
+}
+
+footer h6{
+    font-weight: 500;
+}
+
+footer img{
+    width: 200px;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;     /* Centraliza os itens verticalmente (se necessário) */
+    margin-bottom: 20px;
+    margin-top: -5%;
+}
+
+.icon-style i{
+    font-size: 35px;
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.icon-style i:hover{
+    color: var(--azul-logo);
+}
+
+.footer-content{
+    justify-content: space-around;
+    margin-top: 100px;
 }
