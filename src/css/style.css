@@ -28,6 +28,10 @@
     background-position: 50%;
 }
 
+.paragrafo{
+    font-size: 17px;
+}
+
 .bg-image{
     background-image: url('../assets/ocean.png');
 }
@@ -178,7 +182,7 @@ section.problema{
 }
 
 .problema .txt-problema{
-    margin-top: 130px;
+    margin-top: 110px;
     font-size: 16px;
 }
 
@@ -221,4 +225,61 @@ section.problema{
 .img-objetivo img{
     border-radius: 20px;
     width: 700px;
+}
+
+section.publico{
+    margin-top: 100px;
+}
+
+.publico .txt-publico{
+    margin-top: 130px;
+    margin-right: -100px;
+}
+
+.btn-donate{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: var(--azul-logo);
+    border: 2px solid var(--azul-logo-degrade);
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btn-donate i{
+    margin-top: 3px;
+}
+
+.btn-donate:hover{
+    padding: 10px;
+    font-size: 15px;
+    color: var(--azul-logo);
+    background-color: white;
+    border: 2px solid var(--azul-logo);
+    border-radius: 20px;
+    font-weight: 600;
+    transform: scale(1.03);
+}
+
+.img-publico img{
+    position: relative;
+    border-radius: 20px;
+    width: 700px;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 10px;
+    }
 }
