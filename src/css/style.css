@@ -151,15 +151,15 @@ section.problema{
     
 }
 
-.titulo-problema{
+.titulos-sections{
     text-align: center;
 }
 
-.problema h2{
+.titulos-sections h2{
     font-size: 35px;
 }
 
-.problema h2 span{
+.titulos-sections h2 span{
     background-image: linear-gradient(var(--azul-logo-degrade), var(--azul-logo));
     -webkit-text-fill-color: transparent; /* Deixa a cor do texto transparente */
     background-clip: text; /* Coloca a cor do fundo como a cor do texto */
@@ -185,4 +185,40 @@ section.problema{
 .problema i{
     color: var(--azul-logo);
     font-size: 60px;
+}
+
+.tecnologia{
+    margin-top: 100px;
+}
+
+.tecnologia .flex{
+    margin: 20px;
+    gap: 20px;
+}
+
+.tecnologia .txt-tecnologia{
+    margin-top: 130px;
+}
+
+.img-tecnologia img{
+    border-radius: 20px;
+    width: 700px;
+}
+
+.objetivo{
+    margin-top: 100px;
+}
+
+.objetivo .flex{
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.objetivo .txt-objetivo{
+    margin-top: 120px;
+}
+
+.img-objetivo img{
+    border-radius: 20px;
+    width: 700px;
 }
