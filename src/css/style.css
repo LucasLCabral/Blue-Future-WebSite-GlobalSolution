@@ -1,3 +1,4 @@
+/* Estilização geral */
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +21,9 @@
     display: flex;
 }
 
+/* Fim Estilização geral */
+
+/* inicio site */
 .inicio{
     width: 100%;
     height: 100vh;
@@ -148,6 +152,8 @@ section.animal .flex{
         top: 10px;
     }
 }
+/* fim inicio site */
+
 
 /* Problema */
 
@@ -192,6 +198,10 @@ section.problema{
     font-size: 60px;
 }
 
+/* Fim Problema */
+
+/* Tecnologia */
+
 .tecnologia{
     margin-top: 100px;
 }
@@ -209,6 +219,10 @@ section.problema{
     border-radius: 20px;
     width: 700px;
 }
+
+/* Fim Tecnologia */
+
+/* Objetivo */
 
 .objetivo{
     margin-top: 100px;
@@ -228,6 +242,10 @@ section.problema{
     width: 700px;
 }
 
+/* Fim Objetivo */
+
+/* Publico */
+
 .publico{
     margin-top: 100px;
 }
@@ -245,6 +263,10 @@ section.problema{
     width: 700px;
     border-radius: 20px;
 }
+
+/* Fim Publico */
+
+/* Beneficio */
 
 section.beneficios{
     margin-top: 100px;
@@ -264,6 +286,10 @@ section.beneficios{
     margin-top: 110px;
 }
 
+/* Fim Beneficio */
+
+/* Mudancas */ 
+
 section.mudancas{
     margin-top: 100px;
 }
@@ -281,6 +307,8 @@ section.mudancas{
 .mudancas .txt-mudancas{
     margin-top: 110px;
 }
+
+/* Mudancas */ 
 
 /* Donate */
 section.donate{
@@ -339,6 +367,10 @@ section.donate{
     }
 }
 
+/* Donate */
+
+/* Final da pagina */
+
 .div-final{
     background-image: url(../assets/div.png);
     width: 100%;
@@ -384,3 +416,5 @@ footer .flex {
     justify-content: space-around;
     margin-top: 100px;
 }
+
+/* Fim Final da pagina */
