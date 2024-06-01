@@ -56,6 +56,30 @@ header{
     transform: scale(1.03);
 }
 
+/*Menu lista*/
+.menu-lista {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lista li {
+    margin-right: 20px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
+}
+
+.menu-lista li:last-child {
+    margin-right: 0; /* Remove a margem do último item */
+}
+
+.menu-lista a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* fim menu lista */
 nav{
     margin-left: 15%;
 }
@@ -419,3 +443,29 @@ footer .flex {
 }
 
 /* Fim Final da pagina */
+
+@media screen and (max-width: 1280px){
+    .menu-lista{
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-animal {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .txt-animal h1{
+        margin: -190px 0 0 0; /* Ajuste a margem superior conforme necessário */
+        padding: 0;
+        font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+}
+
+
