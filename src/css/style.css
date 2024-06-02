@@ -42,6 +42,7 @@
 
 header{
     display: flex;
+    z-index: 100;
 }
 
 #logo{
@@ -125,6 +126,7 @@ section.animal .flex{
     color: white;
     font-size: 42px;
     line-height: 37px;
+    z-index: 99;
 }
 
 .animal h1 span{
@@ -132,11 +134,13 @@ section.animal .flex{
     background-image: linear-gradient(var(--azul-logo-degrade), var(--azul-logo));
     -webkit-text-fill-color: transparent; /* Deixa a cor do texto transparente */
     background-clip: text; /* Coloca a cor do fundo como a cor do texto */
+    z-index: 99;
 }
 
 .animal .txt-animal p {
     color: white;
     margin: 40px 0;
+    z-index: 98;
 }
 
 .animal button{
@@ -149,6 +153,7 @@ section.animal .flex{
     font-weight: 600;
     transition: 0.2s;
     cursor: pointer;
+    z-index: 97;
 }
 
 .animal button:hover{
@@ -164,6 +169,7 @@ section.animal .flex{
     position: relative;
     animation: nadando 1.5s ease-in-out infinite alternate;
     transition: 0.3s ease-in-out;
+    z-index: 96;
 }
 
 @keyframes nadando {
@@ -183,6 +189,7 @@ section.animal .flex{
 
 section.problema{
     margin: 20px;
+    z-index: 97;
     
 }
 
@@ -329,7 +336,7 @@ section.mudancas{
 }
 
 .mudancas .txt-mudancas{
-    margin-top: 110px;
+    margin-top: 15px;
 }
 
 /* Mudancas */ 
@@ -340,7 +347,7 @@ section.donate{
 }
 
 .donate .txt-donate{
-    margin-top: 130px;
+    margin-top: 30px;
 }
 
 .btn-donate{
@@ -454,18 +461,263 @@ footer .flex {
         align-items: center;
     }
 
-    .img-animal {
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 0px;
-    }
-
     .txt-animal h1{
         margin: -190px 0 0 0; /* Ajuste a margem superior conforme necessário */
         padding: 0;
         font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
     }
 
+    .animal img{
+        margin-top: -80px;
+        margin-bottom: 20px;
+    }
+/*.animal img{
+width: 300px;
+position: static;
+margin-top: -100px;
+margin-bottom: 20px; 
+transform: none;
+}*/
 }
+
+@media screen and (max-width: 770px){
+    .animal img{
+        margin-top: -80px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .img-problema img{
+        width: 600px;
+    }
+
+    .problema .txt-problema{
+        margin-top: 10px;
+    }
+ 
+    .img-tecnologia img{
+        width: 600px;
+    }
+
+    .titulos-sections h2{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .tecnologia .txt-tecnologia{
+        margin-top: 30px;
+    }
+
+    .img-objetivo img{
+        width: 600px;
+    }
+
+    .objetivo .txt-objetivo{
+        margin-top: 20px;
+    }
+
+    .img-publico img{
+        width: 600px;
+    }
+
+    .publico .txt-publico{
+        margin-top: 20px;
+    }
+    
+    .img-beneficio img{
+        width: 600px;
+    }
+    
+    .beneficios .txt-beneficio{
+        margin-top: 20px;
+    }
+
+    .img-mudancas img{
+        width: 600px;
+    }
+
+    .img-donate img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 633px){
+    .img-problema img{
+        width: 500px;
+    }
+  
+    .img-tecnologia img{
+        width: 500px;
+    }
+
+    .img-objetivo img{
+        width: 500px;
+    }
+
+    .img-publico img{
+        width: 500px;
+    }
+    
+    .img-beneficio img{
+        width: 500px;
+    }
+
+    .img-mudancas img{
+        width: 500px;
+    }
+
+    .img-donate img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 554px){
+    .animal img{
+        margin-top: -40px;
+        margin-bottom: 20px;
+        width: 400px;
+    }
+
+    .img-problema img{
+        width: 400px;
+    }
+  
+    .img-tecnologia img{
+        width: 400px;
+    }
+
+    .img-objetivo img{
+        width: 400px;
+    }
+
+    .img-publico img{
+        width: 400px;
+    }
+    
+    .img-beneficio img{
+        width: 400px;
+    }
+
+    .img-mudancas img{
+        width: 400px;
+    }
+
+    .img-donate img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .animal img{
+        margin-top: -80px;
+        width: 300px;
+    }
+
+    .img-problema img{
+        width: 350px;
+    }
+  
+    .img-tecnologia img{
+        width: 350px;
+    }
+
+    .img-objetivo img{
+        width: 350px;
+    }
+
+    .img-publico img{
+        width: 350px;
+    }
+    
+    .img-beneficio img{
+        width: 350px;
+    }
+
+    .img-mudancas img{
+        width: 350px;
+    }
+
+    .img-donate img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .animal .txt-animal p {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .img-problema img{
+        width: 300px;
+    }
+  
+    .img-tecnologia img{
+        width: 300px;
+    }
+
+    .img-objetivo img{
+        width: 300px;
+    }
+
+    .img-publico img{
+        width: 300px;
+    }
+    
+    .img-beneficio img{
+        width: 300px;
+    }
+
+    .img-mudancas img{
+        width: 300px;
+    }
+
+    .img-donate img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 335px){
+    .animal h1 {
+        font-size: 35px;
+    }
+
+    .animal .txt-animal p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .img-problema img{
+        width: 280px;
+    }
+  
+    .img-tecnologia img{
+        width: 280px;
+    }
+
+    .img-objetivo img{
+        width: 280px;
+    }
+
+    .img-publico img{
+        width: 280px;
+    }
+    
+    .img-beneficio img{
+        width: 280px;
+    }
+
+    .img-mudancas img{
+        width: 280px;
+    }
+
+    .img-donate img{
+        width: 280px;
+    }
+}
+
+
+
 
 
