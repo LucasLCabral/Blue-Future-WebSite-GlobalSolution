@@ -452,10 +452,14 @@ footer .flex {
 /* Fim Final da pagina */
 
 @media screen and (max-width: 1280px){
-    .menu-lista{
-        display: none;
+    .menu-lista li {
+        margin-right: 0px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
     }
-
+    
+    .menu-lista li:last-child {
+        margin-right: 0; /* Remove a margem do último item */
+    }
+    
     .flex {
         flex-direction: column;
         align-items: center;
@@ -471,13 +475,43 @@ footer .flex {
         margin-top: -80px;
         margin-bottom: 20px;
     }
-/*.animal img{
-width: 300px;
-position: static;
-margin-top: -100px;
-margin-bottom: 20px; 
-transform: none;
-}*/
+}
+
+@media screen and (max-width: 1146px){
+    .menu-lista li {
+        margin-right: -10px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
+    }
+    
+    .menu-lista li:last-child {
+        margin-right: -10; /* Remove a margem do último item */
+    }
+}
+
+@media screen and (max-width: 1075px){
+    .menu-lista li {
+        margin-right: -30px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
+    }
+    
+    .menu-lista li:last-child {
+        margin-right: -30; /* Remove a margem do último item */
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .menu-lista li {
+        margin-right: -20px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
+    }
+    
+    .menu-lista li:last-child {
+        margin-right: -20; /* Remove a margem do último item */
+    }
+}
+
+@media screen and (max-width: 1008px){
+    .menu-lista{
+    display: none;
+    }
+
 }
 
 @media screen and (max-width: 770px){
