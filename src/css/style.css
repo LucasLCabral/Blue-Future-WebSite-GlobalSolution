@@ -6,6 +6,10 @@
     font-family: "Inter", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --azul-logo: #3AC6DA;
     --azul-logo-degrade: #3aafda;
