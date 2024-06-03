@@ -21,16 +21,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Botão para fechar o menu
-    closeMenuButton.addEventListener('click', function() {
-        hamburger.classList.remove('active');
-        menuLista.classList.remove('active');
-        overlay.classList.remove('active');
-    });
+    if (closeMenuButton) {
+        closeMenuButton.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            menuLista.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    }
 
     // Fechar menu ao clicar no overlay
     overlay.addEventListener('click', function() {
         hamburger.classList.remove('active');
         menuLista.classList.remove('active');
         overlay.classList.remove('active');
+    });
+
+    // Fechar menu ao clicar fora dele
+    document.addEventListener('click', function(event) {
+        if (!menuLista.contains(event.target) && !hamburger.contains(event.target) && !overlay.contains(event.target)) {
+            hamburger.classList.remove('active');
+            menuLista.classList.remove('active');
+            overlay.classList.remove('active');
+        }
     });
 });
