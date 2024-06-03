@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const menuLista = document.querySelector('.menu-lista');
     const closeMenuButton = document.getElementById('close-menu');
+    const overlay = document.getElementById('overlay');
 
-    // Alternar menu
+    // Alternar menu e overlay
     hamburger.addEventListener('click', function() {
         this.classList.toggle('active');
         menuLista.classList.toggle('active');
+        overlay.classList.toggle('active');
     });
 
     // Fechar menu ao clicar em uma opção
@@ -14,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', function() {
             hamburger.classList.remove('active');
             menuLista.classList.remove('active');
+            overlay.classList.remove('active');
         });
     });
 
@@ -21,13 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
     closeMenuButton.addEventListener('click', function() {
         hamburger.classList.remove('active');
         menuLista.classList.remove('active');
+        overlay.classList.remove('active');
     });
 
-    // Fechar menu ao clicar fora dele
-    document.addEventListener('click', function(event) {
-        if (!menuLista.contains(event.target) && !hamburger.contains(event.target)) {
-            hamburger.classList.remove('active');
-            menuLista.classList.remove('active');
-        }
+    // Fechar menu ao clicar no overlay
+    overlay.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        menuLista.classList.remove('active');
+        overlay.classList.remove('active');
     });
 });

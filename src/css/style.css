@@ -67,6 +67,7 @@ header{
     list-style: none;
     margin: 0;
     padding: 10px;
+    z-index: 1000;
 }
 
 .menu-lista li {
@@ -89,7 +90,7 @@ header{
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 99999;
     margin-top: 25px;
 }
 
@@ -99,6 +100,7 @@ header{
     background: white;
     margin: 4px 0;
     transition: 0.4s;
+    z-index: 1001;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -484,6 +486,24 @@ footer .flex {
 
 /* Fim Final da pagina */
 
+/* Estilo para o overlay */
+.overlay {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.808);
+    z-index: 60; /* Abaixo do menu */
+    pointer-events:none; /* Permitir cliques através do overlay */
+}
+
+.overlay.active {
+    display: block; /* Mostrar o overlay quando ativo */
+    pointer-events: none; /* Permitir cliques no overlay quando ativo */
+}
+
 @media screen and (max-width: 1280px){
     .menu-lista li {
         margin-right: 0px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
@@ -569,9 +589,9 @@ footer .flex {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 0px;
         right: 0;
-        background-color: var(--azul-escuro);
+        background-color: #353535;
         width: 100%;
         text-align: center;
         padding: 20px;
@@ -607,10 +627,6 @@ footer .flex {
 
     nav ul {
         margin: 0;
-    }
-
-    #logo {
-        z-index: 9999;
     }
 
     .close-icon {
