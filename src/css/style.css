@@ -524,9 +524,29 @@ footer .flex {
         font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
     }
 
+    .img-problema{
+        margin-left: 10%;
+    }
+
     .animal img{
         margin-top: -80px;
         margin-bottom: 20px;
+    }
+
+    .tecnologia .flex{
+        flex-direction: column-reverse;
+    }
+
+    .publico .flex{
+        flex-direction: column-reverse;
+    }
+
+    .mudancas .flex{
+        flex-direction: column-reverse;
+    }
+
+    .donate img{
+        margin-left: 80px;
     }
 
     .objetivo .txt-objetivo{
@@ -548,6 +568,11 @@ footer .flex {
     .donate .txt-donate{
         padding: 20px;
     }
+
+    footer .interface .icon-style{
+        margin-top: -10%;
+    }
+
 }
 
 @media screen and (max-width: 1146px){
