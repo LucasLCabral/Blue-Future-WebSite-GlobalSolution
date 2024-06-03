@@ -40,6 +40,10 @@ html{
     font-size: 17px;
 }
 
+.paragrafo span{
+    font-weight: 700;
+}
+
 .bg-image{
     background-image: url('../assets/ocean.png');
 }
@@ -371,7 +375,7 @@ section.mudancas{
 }
 
 .mudancas .txt-mudancas{
-    margin-top: 15px;
+    margin-top: 100px;
 }
 
 /* Mudancas */ 
@@ -446,7 +450,7 @@ section.donate{
 .div-final{
     background-image: url(../assets/div.png);
     width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 
 footer{
