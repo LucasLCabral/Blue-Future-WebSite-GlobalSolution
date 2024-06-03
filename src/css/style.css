@@ -383,6 +383,7 @@ section.donate{
 
 .donate .txt-donate{
     margin-top: 30px;
+    padding-left: 17%;
 }
 
 .btn-donate{
@@ -417,10 +418,15 @@ section.donate{
     transform: scale(1.03);
 }
 
+
+.img-donate{
+    padding-left: 100px;
+}
+
 .img-donate img{
     position: relative;
     border-radius: 20px;
-    width: 700px;
+    width: 400px;
     animation: flutuar 1s ease-in-out infinite alternate;
 }
 
@@ -505,12 +511,8 @@ footer .flex {
 }
 
 @media screen and (max-width: 1280px){
-    .menu-lista li {
-        margin-right: 0px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
-    }
-    
-    .menu-lista li:last-child {
-        margin-right: 0; /* Remove a margem do último item */
+    .menu-lista #mudancas{
+        padding-left: 6%;
     }
     
     .flex {
@@ -525,7 +527,7 @@ footer .flex {
     }
 
     .img-problema{
-        
+        padding-left: 10%;
     }
 
     .animal img{
@@ -545,8 +547,8 @@ footer .flex {
         flex-direction: column-reverse;
     }
 
-    .donate img{
-       
+    .img-donate{
+        padding-left: 0;
     }
 
     .objetivo .txt-objetivo{
