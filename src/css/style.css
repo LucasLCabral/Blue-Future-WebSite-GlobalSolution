@@ -38,11 +38,12 @@ html{
 
 .paragrafo{
     font-size: 17px;
+    text-align: justify;
 }
 
 .paragrafo span{
     font-weight: 700;
-    text-align: justify;
+    
 }
 
 .bg-image{
