@@ -40,6 +40,10 @@ html{
     font-size: 17px;
 }
 
+.paragrafo span{
+    font-weight: 700;
+}
+
 .bg-image{
     background-image: url('../assets/ocean.png');
 }
@@ -67,6 +71,7 @@ header{
     list-style: none;
     margin: 0;
     padding: 10px;
+    z-index: 1000;
 }
 
 .menu-lista li {
@@ -89,7 +94,7 @@ header{
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 99999;
     margin-top: 25px;
 }
 
@@ -99,6 +104,7 @@ header{
     background: white;
     margin: 4px 0;
     transition: 0.4s;
+    z-index: 1001;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -369,7 +375,7 @@ section.mudancas{
 }
 
 .mudancas .txt-mudancas{
-    margin-top: 15px;
+    margin-top: 100px;
 }
 
 /* Mudancas */ 
@@ -381,6 +387,7 @@ section.donate{
 
 .donate .txt-donate{
     margin-top: 30px;
+    padding-left: 17%;
 }
 
 .btn-donate{
@@ -415,10 +422,15 @@ section.donate{
     transform: scale(1.03);
 }
 
+
+.img-donate{
+    padding-left: 100px;
+}
+
 .img-donate img{
     position: relative;
     border-radius: 20px;
-    width: 700px;
+    width: 400px;
     animation: flutuar 1s ease-in-out infinite alternate;
 }
 
@@ -438,7 +450,7 @@ section.donate{
 .div-final{
     background-image: url(../assets/div.png);
     width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 
 footer{
@@ -484,13 +496,27 @@ footer .flex {
 
 /* Fim Final da pagina */
 
+/* Estilo para o overlay */
+.overlay {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.808);
+    z-index: 60; /* Abaixo do menu */
+    pointer-events:none; /* Permitir cliques através do overlay */
+}
+
+.overlay.active {
+    display: block; /* Mostrar o overlay quando ativo */
+    pointer-events: none; /* Permitir cliques no overlay quando ativo */
+}
+
 @media screen and (max-width: 1280px){
-    .menu-lista li {
-        margin-right: 0px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
-    }
-    
-    .menu-lista li:last-child {
-        margin-right: 0; /* Remove a margem do último item */
+    .menu-lista #mudancas{
+        padding-left: 6%;
     }
     
     .flex {
@@ -504,9 +530,29 @@ footer .flex {
         font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
     }
 
+    .img-problema{
+        padding-left: 10%;
+    }
+
     .animal img{
         margin-top: -80px;
         margin-bottom: 20px;
+    }
+
+    .tecnologia .flex{
+        flex-direction: column-reverse;
+    }
+
+    .publico .flex{
+        flex-direction: column-reverse;
+    }
+
+    .mudancas .flex{
+        flex-direction: column-reverse;
+    }
+
+    .img-donate{
+        padding-left: 0;
     }
 
     .objetivo .txt-objetivo{
@@ -528,6 +574,11 @@ footer .flex {
     .donate .txt-donate{
         padding: 20px;
     }
+
+    footer .interface .icon-style{
+        margin-top: -10%;
+    }
+
 }
 
 @media screen and (max-width: 1260px){
@@ -581,7 +632,7 @@ footer .flex {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: var(--azul-escuro);
+        background-color: #353535;
         width: 100%;
         text-align: center;
         padding: 20px;
@@ -628,10 +679,6 @@ footer .flex {
 
     nav ul {
         margin: 0;
-    }
-
-    #logo {
-        z-index: 9999;
     }
 
     .close-icon {
