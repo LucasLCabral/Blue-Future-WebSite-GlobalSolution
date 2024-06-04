@@ -75,6 +75,10 @@ header{
     padding: 10px;
     z-index: 1000;
 }
+.texto-login{
+    display: none;
+}
+      
 
 .menu-lista li {
     margin-right: 20px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
@@ -390,8 +394,10 @@ section.login {
     justify-content: center;
     align-items: center;
     padding: 40px 4%;
-    background-color: var(--azul-escuro);
+    background-color: #fff;
+    box-shadow: 0 0 40px 10px #3aafda50;
     color: white;
+    margin-top: 100px;
 }
 
 section.login .fundo {
@@ -470,6 +476,7 @@ section.login .registrar a {
 section.login .registrar a:hover {
     text-decoration: underline;
 }
+
 /* FINAL LOGIN */
 
 
@@ -610,6 +617,14 @@ footer .flex {
     transition: 0.3s;
 }
 
+@media screen and (max-width: 1400px){
+    header #logo{
+        margin-top: 15px;
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+}
+
 @media screen and (max-width: 1280px){
     header #logo{
         margin-top: 15px;
@@ -735,6 +750,14 @@ footer .flex {
 }
 
 @media screen and (max-width: 1008px) {
+    .icone-login{
+        display: none;
+    }
+
+    .texto-login{
+        display: block;
+    }
+
     .hamburger{
         margin-left: 450px;
     }
@@ -760,14 +783,14 @@ footer .flex {
         top: 0;
         left: 0;
         width: 100%;
-        height: 60px;
+        height: 70px;
         background-color: #353535;
         z-index: -1; /* Coloca o pseudo-elemento atrás do menu */
     }
 
     .menu-lista.active {
         display: flex;
-        max-height: 400px;
+        max-height: 800px;
         align-items: center;
         justify-content: center;
     }
