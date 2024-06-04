@@ -382,6 +382,98 @@ section.mudancas{
 
 /* Mudancas */ 
 
+
+/* LOGIN */
+/* Estilo para a seção de login */
+section.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 4%;
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+section.login .fundo {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+section.login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-image: linear-gradient(var(--azul-logo-degrade), var(--azul-logo));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+section.login .input-box {
+    margin-bottom: 20px;
+}
+
+section.login .input-box input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--azul-logo);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--azul-escuro);
+    font-size: 16px;
+}
+
+section.login .esquecer-senha {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+section.login .esquecer-senha a {
+    color: var(--azul-logo);
+    text-decoration: none;
+}
+
+section.login .esquecer-senha a:hover {
+    text-decoration: underline;
+}
+
+section.login button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: var(--azul-escuro);
+    background-color: var(--azul-logo);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.login button:hover {
+    background-color: var(--azul-logo-degrade);
+    color: white;
+}
+
+section.login .registrar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section.login .registrar a {
+    color: var(--azul-logo);
+    text-decoration: none;
+}
+
+section.login .registrar a:hover {
+    text-decoration: underline;
+}
+/* FINAL LOGIN */
+
+
+
 /* Donate */
 section.donate{
     margin-top: 100px;
