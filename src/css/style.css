@@ -461,7 +461,7 @@ section.login button {
     width: 100%;
     padding: 15px;
     font-size: 16px;
-    color: var(--azul-escuro);
+    color: #fff;
     background-color: var(--azul-logo);
     border: none;
     border-radius: 10px;
@@ -470,8 +470,10 @@ section.login button {
 }
 
 section.login button:hover {
-    background-color: var(--azul-logo-degrade);
-    color: white;
+    color: var(--azul-logo);
+    background-color: white;
+    border: 2px solid var(--azul-logo);
+    transform: scale(1.03);
 }
 
 section.login .registrar {
