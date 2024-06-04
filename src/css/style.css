@@ -581,6 +581,16 @@ footer .flex {
 
 }
 
+@media screen and (max-width: 1260px){
+    .menu-lista li {
+        margin-right: -10px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
+    }
+    
+    .menu-lista li:last-child {
+        margin-right: -10; /* Remove a margem do último item */
+    }
+}
+
 @media screen and (max-width: 1146px){
     .menu-lista li {
         margin-right: -10px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
@@ -620,7 +630,7 @@ footer .flex {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 0px;
+        top: 60px;
         right: 0;
         background-color: #353535;
         width: 100%;
@@ -629,6 +639,17 @@ footer .flex {
         transition: max-height 0.4s ease-in-out;
         max-height: 0;
         overflow: hidden;
+    }
+
+    .menu-lista::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #353535;
+        z-index: -1; /* Coloca o pseudo-elemento atrás do menu */
     }
 
     .menu-lista.active {
@@ -668,6 +689,10 @@ footer .flex {
         font-size: 24px;
         cursor: pointer;
         color: white;
+    }
+
+    #logo{
+        z-index: 9999999;
     }
 }
 
