@@ -42,6 +42,7 @@ html{
 
 .paragrafo span{
     font-weight: 700;
+    text-align: justify;
 }
 
 .bg-image{
