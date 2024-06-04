@@ -462,6 +462,7 @@ footer{
 
 footer img{
     margin-top: 200px;
+    margin-right: 15px;
 }
 
 footer h6{
@@ -514,11 +515,19 @@ footer .flex {
 .overlay.active {
     display: block; /* Mostrar o overlay quando ativo */
     pointer-events: none; /* Permitir cliques no overlay quando ativo */
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 1280px){
-    .menu-lista #mudancas{
-        padding-left: 6%;
+    header #logo{
+        margin-top: 15px;
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+
+    nav .menu-lista li a{
+        gap: 5px;
+        
     }
     
     .flex {
@@ -570,6 +579,7 @@ footer .flex {
     }
 
     .mudancas .txt-mudancas{
+        margin-top: 10px;
         padding: 20px;
     }
     
@@ -577,8 +587,17 @@ footer .flex {
         padding: 20px;
     }
 
+    .div-final{
+        width: 100%;
+        height: 50vh;
+    }
+
     footer .interface .icon-style{
-        margin-top: -10%;
+        margin-top: -20%;
+    }
+
+    footer .interface img{
+        margin-top: 50%;
     }
 
 }
