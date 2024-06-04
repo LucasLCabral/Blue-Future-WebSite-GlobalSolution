@@ -95,6 +95,17 @@ header{
     display: block;
 }
 
+.icone-login{
+    margin-top: -5px;
+}
+
+.icone-login i{
+    font-size: 25px;
+}
+.icone-login i:hover{
+    transform: scale(1.03);
+}
+
 /* Estilo para o menu hamburguer */
 .hamburger {
     display: none;
