@@ -81,11 +81,12 @@ header{
       
 
 .menu-lista li {
+    margin-left: -3%;
     margin-right: 20px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
 }
 
-.menu-lista li:last-child {
-    margin-right: 0; /* Remove a margem do último item */
+.menu-lista li i{
+    margin-left: 200px;
 }
 
 .menu-lista a {
@@ -736,6 +737,10 @@ footer .flex {
     .menu-lista li {
         margin-right: -10px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
     }
+
+    .menu-lista li i{
+        margin-left: 10px;
+    }
     
     .menu-lista li:last-child {
         margin-right: -10; /* Remove a margem do último item */
@@ -744,8 +749,13 @@ footer .flex {
 
 @media screen and (max-width: 1075px){
     .menu-lista li {
+        margin-left: 0;
         margin-right: -30px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
     }
+
+    .menu-lista li i{
+        margin-left: 10px;
+    };
     
     .menu-lista li:last-child {
         margin-right: -30; /* Remove a margem do último item */
