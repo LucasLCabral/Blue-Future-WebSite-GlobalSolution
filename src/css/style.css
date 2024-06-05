@@ -52,12 +52,12 @@ html{
 
 header{
     display: flex;
+    justify-content: space-around;
     z-index: 100;
 }
 
 #logo{
     margin-top: 10px;
-    margin-left: 10%;
     width: 200px;
     height: 55px;
     transition: 0.3s;
@@ -78,16 +78,17 @@ header{
 .texto-login{
     display: none;
 }
-      
 
-.menu-lista li {
-    margin-left: -3%;
-    margin-right: 20px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
-}
+.menu-lista {
+    margin-left: -23%;
+}   
 
-.menu-lista li i{
+
+.icone-login{
     margin-left: 200px;
 }
+
+
 
 .menu-lista a {
     color: white;
@@ -464,16 +465,18 @@ section.login button {
     font-size: 16px;
     color: #fff;
     background-color: var(--azul-logo);
-    border: none;
+    border: 2px solid var(--azul-logo-degrade);
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition:  0.3s ease;
 }
 
 section.login button:hover {
     color: var(--azul-logo);
     background-color: white;
     border: 2px solid var(--azul-logo);
+    padding: 15px;
+    font-size: 16px;
     transform: scale(1.03);
 }
 
@@ -640,6 +643,23 @@ footer .flex {
 }
 
 @media screen and (max-width: 1280px){
+    .menu-lista {
+        margin-left: -7%;
+    }  
+    footer img{
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    .menu-lista li {
+        margin-right: -10px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
+    }
+    
+    .menu-lista li:last-child {
+        margin-right: -10; /* Remove a margem do último item */
+    }
+
     header #logo{
         margin-top: 15px;
         margin-left: -10px;
@@ -720,17 +740,6 @@ footer .flex {
     footer .interface img{
         margin-top: 50%;
     }
-
-}
-
-@media screen and (max-width: 1260px){
-    .menu-lista li {
-        margin-right: -10px; /* Ajuste para aumentar ou diminuir o espaço entre os itens */
-    }
-    
-    .menu-lista li:last-child {
-        margin-right: -10; /* Remove a margem do último item */
-    }
 }
 
 @media screen and (max-width: 1146px){
@@ -744,6 +753,18 @@ footer .flex {
     
     .menu-lista li:last-child {
         margin-right: -10; /* Remove a margem do último item */
+    }
+
+    .div-final{
+        height: 40vh;
+    }
+
+    footer .interface img{
+        margin-top: 150px;
+    }
+
+    footer .interface .icon-style{
+        margin-top: 10px;
     }
 }
 
