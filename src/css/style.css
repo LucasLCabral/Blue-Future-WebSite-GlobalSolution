@@ -661,11 +661,20 @@ footer .flex {
         margin-left: -10px;
         margin-right: 20px;
     }
+
+    .menu-lista {
+        margin-top: 10px;
+        margin-left: -10%;
+    }  
+    footer img{
+        margin-top: 140px;
+    }
 }
 
 @media screen and (max-width: 1280px){
     .menu-lista {
-        margin-left: -7%;
+        margin-top: 10px;
+        margin-left: -10%;
     }  
     footer img{
         margin-top: 140px;
