@@ -3,7 +3,7 @@
 RM 557927 WESLLEY OLIVEIRA CARDOSO,
 RM 554589 LUCAS LUDOVICO CABRAL,
 
-GIT PAGES: ---------------------
+GIT PAGES: https://lucaslcabral.github.io/Blue-Future-WebSite-GlobalSolution/
 
 link repositorio: https://github.com/LucasLCabral/Blue-Future-WebSite-GlobalSolution
 
