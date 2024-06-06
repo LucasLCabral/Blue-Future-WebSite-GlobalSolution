@@ -674,7 +674,7 @@ footer .flex {
 @media screen and (max-width: 1280px){
     .menu-lista {
         margin-top: 10px;
-        margin-left: -10%;
+        margin-left: -5%;
     }  
     footer img{
         margin-top: 140px;
