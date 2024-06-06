@@ -679,6 +679,10 @@ footer .flex {
     footer img{
         margin-top: 140px;
     }
+
+    section.problema{
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 1260px){
