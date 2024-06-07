@@ -38,12 +38,13 @@ Para começar a usar o projeto Blue Clean, siga estas etapas:
 1. **Clone o repositório:** Use o comando `git clone` para clonar o repositório em sua máquina local.
    ```bash
    https://github.com/LucasLCabral/Blue-Future-WebSite-GlobalSolution.git
+   ```
    
 2. **Abra o arquivo HTML: Navegue até o diretório onde o repositório foi clonado e abra o arquivo `index.html` em seu navegador da web.
 
 3. **Explore o site: Agora você pode explorar todas as funcionalidades e seções do site Blue Clean diretamente em seu navegador.
 
-##Como Contribuir
+## Como Contribuir
 
 Se você deseja contribuir para o projeto Blue Clean, sinta-se à vontade para fazer um fork do repositório, fazer suas alterações e enviar um pull request. Estamos sempre abertos a melhorias e novas ideias para tornar nossa plataforma ainda melhor!
 
