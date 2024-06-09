@@ -675,8 +675,12 @@ footer .flex {
 @media screen and (max-width: 1280px){
     .menu-lista {
         margin-top: 10px;
-        margin-left: -5%;
+        margin-left: -10%;
     }  
+
+    .icone-login{
+        margin-left: 200px;
+    }
     footer img{
         margin-top: 140px;
     }
